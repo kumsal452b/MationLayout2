@@ -60,5 +60,40 @@
         app:layout_constraintLeft_toRightOf="@id/icon_5"
         app:layout_constraintTop_toBottomOf="@id/icon_1"
         android:padding="10dp"/>
-    
+    <ImageView
+        android:id="@+id/icon_7"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="center"
+        android:src="@drawable/telegram"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_4"
+        android:padding="10dp"/>
+    <ImageView
+        android:id="@+id/icon_8"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="center"
+        android:src="@drawable/projectdiagram"
+        app:layout_constraintLeft_toRightOf="@id/icon_7"
+        app:layout_constraintTop_toBottomOf="@id/icon_4"
+        android:padding="10dp"/>
+    <ImageView
+        android:id="@+id/icon_9"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:scaleType="center"
+        android:src="@drawable/projectdiagram"
+        app:layout_constraintLeft_toRightOf="@id/icon_8"
+        app:layout_constraintTop_toBottomOf="@id/icon_4"
+        android:padding="10dp"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/expand"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
