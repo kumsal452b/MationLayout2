@@ -6,9 +6,11 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000">
+        motion:duration="3000">
        <KeyFrameSet>
        </KeyFrameSet>
+        <OnClick />
+        <OnSwipe motion:touchAnchorId="@+id/view" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -23,7 +25,9 @@
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintLeft_toLeftOf="parent"
             motion:layout_constraintRight_toRightOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintTop_toTopOf="parent"
+            android:rotationX="-43"
+            android:rotationY="-12" />
         <Constraint
             android:id="@+id/icon_9"
             motion:layout_constraintLeft_toRightOf="@id/icon_8"
@@ -71,8 +75,20 @@
             android:id="@+id/icon_4"
             android:layout_width="65dp"
             android:layout_height="65dp"
-            motion:layout_constraintTop_toBottomOf="@id/icon_1"
-            motion:layout_constraintLeft_toLeftOf="parent" />
+            motion:layout_constraintLeft_toRightOf="@id/icon_3"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/icon_5"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintLeft_toRightOf="@id/icon_4" />
+        <Constraint
+            android:id="@+id/icon_6"
+            motion:layout_constraintLeft_toRightOf="@id/icon_5"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            motion:layout_constraintTop_toTopOf="parent" />
 
     </ConstraintSet>
 </MotionScene>

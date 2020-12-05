@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/activity_main_scene"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    app:motionDebug="SHOW_PATH">
 
     <ImageView
         android:id="@+id/icon_1"
@@ -63,10 +64,10 @@
         android:layout_height="130dp"
         android:padding="10dp"
         android:scaleType="center"
-        android:src="@drawable/projectdiagram"
+        android:src="@drawable/wifi"
         app:layout_constraintLeft_toRightOf="@id/icon_5"
         app:layout_constraintTop_toBottomOf="@id/icon_1"
-        app:srcCompat="@drawable/wifi" />
+       />
 
     <ImageView
         android:id="@+id/icon_7"
@@ -84,10 +85,9 @@
         android:layout_height="130dp"
         android:padding="10dp"
         android:scaleType="center"
-        android:src="@drawable/projectdiagram"
+        android:src="@drawable/tram"
         app:layout_constraintLeft_toRightOf="@id/icon_7"
-        app:layout_constraintTop_toBottomOf="@id/icon_4"
-        app:srcCompat="@drawable/tram" />
+        app:layout_constraintTop_toBottomOf="@id/icon_4" />
 
     <ImageView
         android:id="@+id/icon_9"
@@ -95,7 +95,7 @@
         android:layout_height="130dp"
         android:padding="10dp"
         android:scaleType="center"
-        android:src="@drawable/projectdiagram"
+        android:src="@drawable/telegram"
         app:layout_constraintLeft_toRightOf="@id/icon_8"
         app:layout_constraintTop_toBottomOf="@id/icon_4" />
 
